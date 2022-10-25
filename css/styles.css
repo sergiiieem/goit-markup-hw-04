@@ -51,12 +51,12 @@ img {
 .link {
     text-decoration: none;
 }
+
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-   
 }
 
 .section {
@@ -75,15 +75,13 @@ img {
 
 .header-container {
     display: flex;
-
 }
-
 
 .header-nav {
     display: flex;
     align-items: center;
-
 }
+
 .header-logo {
     margin-left: 0;
 
@@ -103,7 +101,6 @@ img {
     gap: 50px;
     margin-left: 93px;
     width: 281px;
-
 }
 .header-item {
 }
@@ -135,8 +132,10 @@ img {
     margin-left: auto;
     gap: 50px;
 }
+
 .header-contacts {   
     display: inline-flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -144,8 +143,7 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--text-color);
-    
+    color: var(--text-color); 
 }
   
 .header-contacts:hover, 
@@ -167,14 +165,12 @@ img {
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: var(--second-bgn-color);
+    background-color: #C4C4C4;
     text-align: center;
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient( 
-        to right, 
         rgba(47,48,58,0.4),
         rgba(47,48,58,0.4)
         ),
@@ -199,8 +195,8 @@ img {
     padding-left: 32px;
     margin-top: 30px;
     
-
     border: 1px solid transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
     font-family: inherit;
@@ -213,6 +209,7 @@ img {
     background-color: var(--activation-color);
     cursor: pointer;
 }
+
 .hero-button:hover,
 .hero-button:focus {
     background-color: #188CE8;
@@ -222,9 +219,9 @@ img {
     padding-bottom: 47px;
 }
 
-.feature {
-    
+.feature {  
 }
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -273,15 +270,18 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+
 .feature-text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-color);
 }
+
 .activity {
     padding-top: 47px;
 }
+
 .section-title {
     margin-bottom: 50px;
 
@@ -294,8 +294,8 @@ img {
 .activity-list {
     display: flex;
     gap: 30px;
-
 }
+
 .activity-item {
     width: calc((100% - 60px) / 3)
 }
@@ -303,6 +303,7 @@ img {
 .section-team {
     background-color: var(--bgn-section-color);
 }
+
 .team-list {
     display: flex;
     gap: 30px;
@@ -344,7 +345,6 @@ img {
     justify-content: center;
     gap: 10px;
 }
-
 
 .team-social-item {
     width:calc((100%-30px)/4);
@@ -407,18 +407,15 @@ img {
     fill: var(--activation-color); 
 }   
 
-
 .client-svg {
     fill:  #AFB1B8;
-
 }
 
 /*------------------------------footer ----------------------------*/
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: var(--second-bgn-color);
-    
+    background-color: var(--second-bgn-color);  
 }
 
 .footer-container {
@@ -442,6 +439,7 @@ img {
 .logo-studio {
     color: var(--bgn-color);
 }
+
 .address {
     margin-top: 20px;
 }
@@ -449,6 +447,7 @@ img {
 .address-list>li:not(:first-child) {
     margin-top: 9px;
 }
+
 .map-link {
     font-size: 14px;
     line-height: 1.71;
@@ -456,6 +455,7 @@ img {
     color: var(--bgn-color);
     font-style: normal;
 }
+
 .map-link:hover,
 .map-link:focus {
     color: var(--activation-color);
@@ -516,9 +516,7 @@ img {
 }
 .follow-svg {
     fill: var(--bgn-color);
-
 }
-
 
 /*------------------------------portfolio-main----------------------------*/
 
@@ -575,12 +573,14 @@ img {
 .portfolio-item {
     width: calc((100% - 60px) / 3);
 }
-.portfolio-item:hover,
-.portfolio-item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.portfolio-item-link {
 
+.portfolio-item-link{
+    display: block;
+}
+
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-project-name {
     margin-bottom: 4px;
